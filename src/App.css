@@ -1,11 +1,50 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(104, 80, 255, 0.25) 0%, rgba(104, 80, 255, 0) 100%);
+  min-height: 100vh;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+.quoteCard{
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  width: 450px;
+  height: 320px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px #0FD3F6;
+  padding: 1rem;
+  font-style: italic;
+}
+
+.quoteButton{
+  margin: 0.35rem;
+  background: linear-gradient(180deg, rgba(6, 0, 43, 15) 0%, #030027 10%);
+  border-radius: 8px;
+  color: white;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+
+.quoteButton:hover {
+  background: white;
+  border-radius: 8px;
+  color:  #030027;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
